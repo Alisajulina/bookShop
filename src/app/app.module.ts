@@ -1,0 +1,20 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { ErrorPageComponent } from './_modules/error-page/error-page.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ErrorPageComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
