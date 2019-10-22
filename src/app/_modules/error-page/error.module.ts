@@ -6,8 +6,6 @@ import { ErrorRoutingModule } from './error-routing.module';
 @NgModule({
   declarations: [
     ErrorPageComponent
-
-
   ],
   imports: [
     CommonModule,
