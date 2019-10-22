@@ -237,43 +237,43 @@ select {
     padding: 0;
   }
 }
-.yolo-site #example-wrapper .font-36 {
+.yolo-site #example-wrapper, .font-36 {
   font-size: 36px;
 }
-.yolo-site #example-wrapper .font-68 {
+.yolo-site #example-wrapper, .font-68 {
   font-size: 68px;
 }
-.yolo-site #example-wrapper .font-18 {
+.yolo-site #example-wrapper, .font-18 {
   font-size: 18px;
 }
-.yolo-site #example-wrapper .font-48 {
+.yolo-site #example-wrapper, .font-48 {
   font-size: 48px;
 }
-.yolo-site #example-wrapper .mt {
+.yolo-site, #example-wrapper, .mt {
   margin-top: 85px;
 }
-.yolo-site #example-wrapper .mb {
+.yolo-site, #example-wrapper, .mb {
   margin-bottom: 85px;
 }
-.yolo-site #example-wrapper .pt {
+.yolo-site, #example-wrapper, .pt {
   padding-top: 85px;
 }
-.yolo-site #example-wrapper .mt-45 {
+.yolo-site, #example-wrapper, .mt-45 {
   margin-top: 45px;
 }
-.yolo-site #example-wrapper .mb-45 {
+.yolo-site, #example-wrapper, .mb-45 {
   margin-bottom: 45px;
 }
-.yolo-site #example-wrapper .mt-20 {
+.yolo-site, #example-wrapper, .mt-20 {
   margin-top: 20px;
 }
-.yolo-site #example-wrapper .mb-20 {
+.yolo-site, #example-wrapper, .mb-20 {
   margin-bottom: 20px;
 }
-.yolo-site #example-wrapper .height-380 {
+.yolo-site #example-wrapper, .height-380 {
   height: 380px;
 }
-.yolo-site #example-wrapper .width-40 {
+.yolo-site #example-wrapper, .width-40 {
   width: 40%;
 }
 @media (min-width: 480px) and (max-width: 991px) {
@@ -11852,25 +11852,26 @@ products
   margin: 0 5px;
   padding: 0 15px;
 }
-.my-account .customer_login_form_wrap h2 {
-  color: #25262c;
+ .customer_login_form_wrap h2 {
+  color: #f5f5f5;
   font-size: 25px;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
 }
-.my-account .customer_login_form_wrap .login label {
-  color: #202020;
+.customer_login_form_wrap .login label {
+  color: #f5f5f5;
+  position: relative;
   font-size: 13px;
   font-weight: normal;
-  margin-bottom: 5px;
+  margin: 10px 0;
   text-transform: uppercase;
 }
-.my-account .customer_login_form_wrap .login label .required {
+.customer_login_form_wrap .login label .required {
   color: #c00;
 }
-.my-account .customer_login_form_wrap .login #username,
-.my-account .customer_login_form_wrap .login #password {
+.customer_login_form_wrap .login #username,
+.customer_login_form_wrap .login #password {
   background: #ffffff none repeat scroll 0 0;
   border: 2px solid #eeeeee;
   height: 40px;
@@ -11883,7 +11884,7 @@ products
   outline: 0 none;
   width: 100%;
 }
-.my-account .customer_login_form_wrap .login .button {
+.customer_login_form_wrap .login .button {
   background-color: #94da46;
   border-radius: 0;
   color: #ffffff;
@@ -11896,22 +11897,22 @@ products
   border: none;
   padding: 5px 20px;
 }
-.my-account .customer_login_form_wrap .login label[for="rememberme"] {
+.customer_login_form_wrap .login label[for="rememberme"] {
   color: #808080;
-  display: block;
+  /*display: block;*/
   font-weight: normal;
   margin-top: 12px;
   text-transform: none;
   margin-bottom: 5px;
   display: inline-block;
 }
-.my-account .customer_login_form_wrap .login label[for="rememberme"] input {
+.customer_login_form_wrap .login label[for="rememberme"] input {
   margin-right: 5px;
 }
-.my-account .customer_login_form_wrap .login .product-begreen-LostPassword a {
+.customer_login_form_wrap .login .product-begreen-LostPassword a {
   color: #808080;
 }
-.my-account .customer_login_form_wrap .login .product-begreen-LostPassword a:hover {
+.customer_login_form_wrap .login .product-begreen-LostPassword a:hover {
   color: #94da46;
 }
 .cart table {
@@ -13455,6 +13456,7 @@ book-service
 .main-nav > .nav > li {
   display: inline-block;
   position: inherit;
+  cursor: pointer;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -13667,7 +13669,7 @@ div.sub-menu .sub-menu-mega {
   height: 100vh;
   z-index: 22;
 }
-.yolo-canvas-menu-wrapper .yolo-canvas-menu-close {
+.yolo-canvas-menu-wrapper fa {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -14781,7 +14783,7 @@ header.header.yolo-header-style-4 .header-sidebar .form-input a {
 .yolo-search-wrapper input {
   background-color: transparent;
   border-width: 0 0 2px;
-  margin-top: 45vh;
+  margin-top: 10vh;
   width: 80vw;
   border-bottom: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 3px;
@@ -14895,7 +14897,7 @@ html.mm-opening .mm-slideout {
   transition: all 0.3s ease 0s;
   width: 30px;
 }
-#social-footer li a:hover {
+#social-footer li:hover {
   background-color: #fff;
   color: #94da46;
 }
@@ -14905,35 +14907,35 @@ html.mm-opening .mm-slideout {
 #social-footer-2 {
   display: inline-block;
   list-style: outside none none;
-  margin-bottom: 0;
   overflow: hidden;
   padding: 0;
   margin: 40px 0;
 }
 #social-footer-2 li {
   display: inline-block;
-}
-#social-footer-2 li a {
   height: 30px;
   line-height: 30px;
   margin: 0 10px;
   text-align: center;
+  cursor: pointer;
   transition: all 0.3s ease 0s;
-  width: 30px;
-  color: #fff;
+  /*width: 30px;*/
+  color: #fff!important;
 }
-#social-footer-2 li a i {
+#social-footer-2 li  fa {
   margin-right: 10px;
 }
-#social-footer-2 li a:hover {
+#social-footer-2 li:hover {
   color: #94da46;
 }
-#social-footer-2 li:first-child a {
-  margin-left: 0;
-}
+/*#social-footer-2 li:first-child a {*/
+/*  margin-left: 0;*/
+/*}*/
 .yolo-footer-wrapper .footer-col .logo {
   margin-bottom: 35px;
   display: inline-block;
+  cursor: pointer;
+
 }
 .yolo-footer-wrapper .footer-1-col-1 p {
   color: #fff;
@@ -15200,7 +15202,7 @@ html.mm-opening .mm-slideout {
   transition: all 0.5s ease 0s;
 }
 .footer-3 .footer-col {
-  background: rgba(0, 0, 0, 0) url("../images/background/bg-footer3.jpg") repeat scroll right bottom / cover;
+  /*background: rgba(0, 0, 0, 0) url("../images/background/bg-footer3.jpg") repeat scroll right bottom / cover;*/
   text-align: center;
   padding: 100px 0;
 }
@@ -15208,6 +15210,7 @@ html.mm-opening .mm-slideout {
   display: inline-block;
   width: 100%;
   text-align: center;
+  cursor: pointer;
   margin-bottom: 0;
 }
 .footer-3 .footer-col .copyright {
@@ -15311,6 +15314,7 @@ html.mm-opening .mm-slideout {
   display: inline-block;
   width: 100%;
   text-align: center;
+  cursor: pointer;
   margin-bottom: 0;
 }
 .footer-5 .copyright {

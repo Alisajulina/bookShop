@@ -7,6 +7,9 @@ import { ErrorRoutingModule } from './error-routing.module';
   declarations: [
     ErrorPageComponent
   ],
+  exports: [
+    ErrorPageComponent
+  ],
   imports: [
     CommonModule,
     ErrorRoutingModule,

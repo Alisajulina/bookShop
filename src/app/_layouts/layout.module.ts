@@ -5,11 +5,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { TranslateModule } from '@ngx-translate/core';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
-    NavComponent
+    NavComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +23,9 @@ import { TranslateModule } from '@ngx-translate/core';
     TranslateModule,
   ],
   exports: [
-    NavComponent
+    NavComponent,
+    FooterComponent,
+    HeaderComponent
   ]
 })
 export class LayoutModule { }

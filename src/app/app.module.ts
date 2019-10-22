@@ -10,12 +10,13 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 // import { LayoutModule } from "./_layouts/layout.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {LayoutModule} from "./_layouts/layout.module";
+import {AuthModule} from "./_modules/auth/auth.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorPageComponent,
-    NavComponent
+
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     AngularFontAwesomeModule,
     // LayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
