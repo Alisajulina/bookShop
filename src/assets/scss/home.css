@@ -21,11 +21,11 @@
     width: 750px;
   }
 }
-.main-home .home-1-banner .product-item-wrap,
-.main-home .home-1-banner .home-1-banner-content-diffirent {
+.main-home, .home-1-banner, .product-item-wrap,
+.main-home, .home-1-banner, .home-1-banner-content-diffirent {
   margin-bottom: 30px;
 }
-.main-home .home-1-banner .home-1-banner-content-diffirent {
+.main-home, .home-1-banner, .home-1-banner-content-diffirent {
   margin-top: 25px;
   text-align: center;
 }

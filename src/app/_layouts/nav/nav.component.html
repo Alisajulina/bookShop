@@ -7,7 +7,7 @@
       <div class="header-left" >
         <nav id="primary-menu" class="main-nav" >
           <ul class="nav" >
-            <li class="menu-item menu-home" fxFlex="10">Главная</li>
+            <li class="menu-item menu-home" fxFlex="10" [routerLink]="['/home']" routerLinkActive="active">Главная</li>
             <li class=" menu-item menu-home" fxFlex="10">Каталог
               <ul class="sub-menu">
                 <li class="menu-item">Книжные бестселлеры
@@ -89,17 +89,17 @@
             </div>
             <input placeholder="Введите ключевое слово для поиска" type="search">
             <button class="search">
-              <i class="fa fa-search"></i>
+              <fa name="fa-search"></fa>
             </button>
             <button class="close">
-              <i class="pe-7s-close"></i>
+              <fa name="fa pe-7s-close"></fa>
             </button>
           </div>
         </div >
         <div class="shopping-cart-wrapper header-customize-item with-price" >
           <div class="widget_shopping_cart_content">
             <div class="widget_shopping_cart_icon">
-              <fa class="wicon fa fa-shopping-bag"></fa>
+              <fa name="wicon fa fa-shopping-bag"></fa>
             </div>
             <div class="cart_list_wrapper">
               <div class="scroll-wrapper cart_list product_list_widget scrollbar-inner">
@@ -115,8 +115,8 @@
 
         </div>
         <div class="header-customize-item canvas-menu-toggle-wrapper" ></div>
-        <div class="canvas-menu-toggle" >
-          <fa class="fa fa-user-o"></fa>
+        <div class="canvas-menu-toggle" [routerLink]="['/auth/login']">
+          <fa name=" fa-user-o"></fa>
         </div>
       </div>
     </div>
