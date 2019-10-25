@@ -7,6 +7,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import {MaterialModule} from "../material/material.module";
+import {LoginComponent} from "../_modules/auth/pages/login/login.component";
 
 
 @NgModule({
@@ -21,11 +23,13 @@ import { HeaderComponent } from './header/header.component';
     RouterModule,
     AngularFontAwesomeModule,
     TranslateModule,
+    MaterialModule
   ],
   exports: [
     NavComponent,
     FooterComponent,
     HeaderComponent
-  ]
+  ],
+  entryComponents: [LoginComponent ]
 })
 export class LayoutModule { }
